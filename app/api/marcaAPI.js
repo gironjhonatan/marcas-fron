@@ -1,4 +1,4 @@
-const API_URL = "http://159.89.157.13:8000/";
+const API_URL = "http://159.89.157.13:8000";
 
 export async function getMarcas(token) {
   const res = await fetch(`${API_URL}/marcas`, {
