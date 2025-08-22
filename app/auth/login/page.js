@@ -44,7 +44,8 @@ export default function LoginPage() {
           type="email"
           placeholder="Correo"
           value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          onChange={(e) => setEmail(e.target.value.toLowerCase())}
+          style={{ textTransform: "lowercase" }}
           className="border border-gray-300 p-3 rounded-lg w-full mb-4 focus:ring-2 focus:ring-blue-500 focus:outline-none text-black"
           required
         />

@@ -45,7 +45,8 @@ export default function RegisterPage() {
           type="email"
           placeholder="Correo"
           value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          onChange={(e) => setEmail(e.target.value.toLowerCase())}
+          style={{ textTransform: "lowercase" }}
           className="bg-white border border-gray-300 p-3 rounded-lg w-full mb-4 text-black placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-none"
           required
         />
